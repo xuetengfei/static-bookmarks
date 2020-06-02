@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "git-push": "./git-push-workflow.sh"
+  },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

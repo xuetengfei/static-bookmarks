@@ -7,7 +7,7 @@ const Component = props => {
       <div className="filter-body columns col-gapless">
         {data.map(({ id, value }) => (
           <div
-            className="column col-3 filter-item"
+            className="column col-xs-12 col-sm-12 col-lg-4 col-xl-3 col-3 filter-item"
             data-tag={`tag-${
               catalogList.find(v => v.name === value.catalog).idx
             }`}
