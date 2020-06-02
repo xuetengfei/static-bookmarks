@@ -5,7 +5,7 @@ import ToggleButton from './comp-toggle-button';
 import FilterCard from './comp-filter-card-body';
 import ErrorBoundary from './comp-error-boundary';
 import './_filters.scss';
-import './custom.scss';
+import './_custom.scss';
 import db from './db.json';
 
 const App = () => {

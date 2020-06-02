@@ -12,13 +12,13 @@
   border: 0;
   box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
   height: 100%;
-  transition: all 0.2s linear;
-}
-.card:hover {
-  box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.35);
-  margin-top: -10px;
-  padding-bottom: 10px;
-  color: #5755d9;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.55);
+    position: relative;
+    top: -1px;
+    color: #5755d9;
+  }
 }
 .book-mark-item-id {
   color: rgb(179, 179, 179);
@@ -27,10 +27,11 @@
 }
 .card-title a {
   color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
 }
-.card-title a:hover {
-  text-decoration: none;
-}
+
 .divider-space {
   height: 30px;
 }
