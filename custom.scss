@@ -1,0 +1,36 @@
+.card {
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  color: #3b4351;
+  font-size: 0.8rem;
+  text-rendering: optimizeLegibility;
+  box-sizing: inherit;
+  background: #fff;
+  border-radius: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+  height: 100%;
+  transition: all 0.2s linear;
+}
+.card:hover {
+  box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.35);
+  margin-top: -10px;
+  padding-bottom: 10px;
+  color: #5755d9;
+}
+.book-mark-item-id {
+  color: rgb(179, 179, 179);
+  transform: scale(0.5, 0.5);
+  font-weight: normal;
+}
+.card-title a {
+  color: inherit;
+}
+.card-title a:hover {
+  text-decoration: none;
+}
+.divider-space {
+  height: 30px;
+}
