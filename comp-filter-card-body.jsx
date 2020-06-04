@@ -1,9 +1,9 @@
-import React from 'react';
+import { h } from 'preact';
 
 const Component = props => {
   const { data, catalogList } = props;
   return (
-    <>
+    <div>
       <div className="filter-body columns col-gapless">
         {data.map(({ id, value }) => (
           <div
@@ -27,7 +27,7 @@ const Component = props => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

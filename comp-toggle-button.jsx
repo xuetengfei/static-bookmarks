@@ -1,9 +1,9 @@
-import React from 'react';
+import { h } from 'preact';
 
 const Component = props => {
   const { catalogList } = props;
   return (
-    <>
+    <div>
       {catalogList.map(({ name, idx }) => (
         <input
           className="filter-tag"
@@ -26,7 +26,7 @@ const Component = props => {
           </label>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

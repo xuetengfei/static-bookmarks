@@ -1,6 +1,7 @@
-import React from 'react';
+import { render, h } from 'preact';
+import { PureComponent } from 'preact/compat';
 
-export default class ErrorBoundary extends React.Component {
+export default class ErrorBoundary extends PureComponent {
   state = {
     error: null,
   };
