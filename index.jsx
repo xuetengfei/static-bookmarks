@@ -51,7 +51,6 @@ const App = () => {
     </>
   );
 };
-<br />;
 
 ReactDOM.render(
   <ErrorBoundary>
