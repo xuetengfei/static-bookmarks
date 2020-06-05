@@ -35,12 +35,17 @@ const App = () => {
   useEffect(() => {
     fetchData();
   }, []);
+  const handelToggleDarkMode = () => {
+    var element = document.body;
+    element.classList.toggle('dark-mode');
+  };
   return (
     <>
-      <div
-        className="divider text-center"
-        data-content="xuetengfei's bookMarks"
-      ></div>
+      <div className="nav">
+        <button class="btn btn-sm" onClick={handelToggleDarkMode}>
+          Toggle Mode
+        </button>
+      </div>
       <div className="column col-12">
         <div className="filter">
           <ToggleButton catalogList={catalogList} />

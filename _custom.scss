@@ -1,3 +1,13 @@
+.dark-mode:not(img) {
+  background-color: black;
+  filter: invert(100%) hue-rotate(180deg);
+}
+.nav {
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
 .card {
   line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
