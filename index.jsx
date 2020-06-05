@@ -1,19 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import 'spectre.css';
+import 'babel-polyfill';
 import ToggleButton from './comp-toggle-button';
 import FilterCard from './comp-filter-card-body';
 import ErrorBoundary from './comp-error-boundary';
 import './_filters.scss';
 import './_custom.scss';
-import db from './db.json';
+
+const api =
+  'https://raw.githubusercontent.com/xuetengfei/my_json_data/master/book_marks.json';
+
+const Loading = () => (
+  <div className="loading loading-lg loading-position"></div>
+);
 
 const App = () => {
   const [data, setData] = useState([]);
   const [catalogList, setCatalogList] = useState([]);
 
-  const fetchData = () => {
-    const { all } = db;
+  const fetchData = async () => {
+    const res = await fetch(api);
+    const { all } = await res.json();
     const data = Object.entries(all).map(([key, value]) => ({
       id: key,
       value,
@@ -42,17 +50,21 @@ const App = () => {
   return (
     <>
       <div className="nav">
-        <button class="btn btn-sm" onClick={handelToggleDarkMode}>
+        <button className="btn btn-sm" onClick={handelToggleDarkMode}>
           Toggle Mode
         </button>
       </div>
-      <div className="column col-12">
-        <div className="filter">
-          <ToggleButton catalogList={catalogList} />
-          <div className="divider-space"></div>
-          <FilterCard data={data} catalogList={catalogList} />
+      {!data.length ? (
+        <Loading />
+      ) : (
+        <div className="column col-12">
+          <div className="filter">
+            <ToggleButton catalogList={catalogList} />
+            <div className="divider-space"></div>
+            <FilterCard data={data} catalogList={catalogList} />
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
