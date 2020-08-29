@@ -8,8 +8,7 @@ import ErrorBoundary from './comp-error-boundary';
 import './_filters.scss';
 import './_custom.scss';
 
-const api =
-  'https://raw.githubusercontent.com/xuetengfei/my_json_data/master/book_marks.json';
+const api = './db.json';
 
 const Loading = () => (
   <div className="loading loading-lg loading-position"></div>
