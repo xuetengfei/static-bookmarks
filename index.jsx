@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import 'spectre.css';
 import 'babel-polyfill';
 import ToggleButton from './comp-toggle-button';
 import FilterCard from './comp-filter-card-body';
 import ErrorBoundary from './comp-error-boundary';
+import DB from './db.json';
+import 'spectre.css';
 import './_filters.scss';
 import './_custom.scss';
-
-const api = './db.json';
 
 const Loading = () => (
   <div className="loading loading-lg loading-position"></div>
@@ -18,9 +17,8 @@ const App = () => {
   const [data, setData] = useState([]);
   const [catalogList, setCatalogList] = useState([]);
 
-  const fetchData = async () => {
-    const res = await fetch(api);
-    const { all } = await res.json();
+  const fetchData = () => {
+    const { all } = DB;
     const data = Object.entries(all).map(([key, value]) => ({
       id: key,
       value,
