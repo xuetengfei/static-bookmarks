@@ -27,11 +27,11 @@ def DeleteItem(id):
     # db.table('all').remove(doc_ids=[162])
 
 
-# AddItem({
-#     'describtion': 'vercel',
-#     'url': 'https://vercel.com/dashboard',
-#     "catalog": 'x'  # 小写
-# })
+AddItem({
+    'describtion': 'linux-command-line-中文版本',
+    'url': 'https://www.kancloud.cn/thinkphp/linux-command-line/39431',
+    "catalog": 'Linux'  # 小写
+})
 
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
