@@ -19,11 +19,17 @@ def AddItem(item):
     print('Insert Item  Successed!!!')
 
 
-# AddItem({
-#     'describtion': '端媒体',
-#     'url': 'https://theinitium.com/',
-#     "catalog": 'x'  # 小写
-# })
+def DeleteItem(id):
+    db.table('all').remove(doc_ids=[id])
+    print('Delete Item Successed !!!')
+    # db.table('all').remove(doc_ids=[162])
+
+
+AddItem({
+    'describtion': 'vercel',
+    'url': 'https://vercel.com/dashboard',
+    "catalog": 'x'  # 小写
+})
 
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
@@ -33,8 +39,4 @@ def AddItem(item):
 # db.table('all').update(
 #     {'describtion': 'My_Github'}, doc_ids=[161])
 
-
-# # table.remove(doc_ids=[209,210])
-# db.table('all').remove(doc_ids=[162])
-
-# print('Remover Item Successed !!!')
+# DeleteItem(162)
