@@ -2,7 +2,7 @@
 
 echo "----- Start -----"
 find $PWD/* -empty | xargs rm
-git pull
+git pull --ff-only
 git add .
 git commit -m "$(date | md5 )"
 git push origin master
