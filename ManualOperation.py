@@ -41,7 +41,7 @@ def DeleteItem(id):
 # db.table('all').update(
 #     {'catalog': 'linux'}, doc_ids=[212])
 
-# DeleteItem(213)
+# DeleteItem(145)
 
 
 # os.system("sh COMMAND")
