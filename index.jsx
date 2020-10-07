@@ -23,11 +23,10 @@ const App = () => {
       id: key,
       value,
     }));
-
     const catalogList = data
       .map(v => v.value.catalog)
-      .filter((el, idx, arr) => idx === arr.indexOf(el));
-
+      .filter((el, idx, arr) => idx === arr.indexOf(el))
+      .sort();
     setCatalogList(
       ['all', ...catalogList].map((v, id) => ({
         name: v,

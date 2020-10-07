@@ -27,11 +27,11 @@ def DeleteItem(id):
     # db.table('all').remove(doc_ids=[162])
 
 
-AddItem({
-    'describtion': 'linux-command-line-中文版本',
-    'url': 'https://www.kancloud.cn/thinkphp/linux-command-line/39431',
-    "catalog": 'Linux'  # 小写
-})
+# AddItem({
+#     'describtion': 'linux-command-line-中文版本',
+#     'url': 'https://www.kancloud.cn/thinkphp/linux-command-line/39431',
+#     "catalog": 'Linux'  # 小写
+# })
 
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
@@ -39,10 +39,10 @@ AddItem({
 
 
 # db.table('all').update(
-#     {'describtion': 'My_Github'}, doc_ids=[161])
+#     {'catalog': 'linux'}, doc_ids=[212])
 
-# DeleteItem(162)
+# DeleteItem(213)
 
 
 # os.system("sh COMMAND")
-os.system(COMMAND)
+# os.system(COMMAND)
