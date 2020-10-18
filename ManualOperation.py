@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Project Python',
-#     'url': 'http://projectpython.net/chapter00/',
-#     "catalog": 'python'  # 小写
+#     'describtion': 'GitMind',
+#     'url': 'https://gitmind.cn/',
+#     "catalog": 'tools'  # 小写
 # })
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
