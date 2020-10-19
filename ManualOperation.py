@@ -28,10 +28,11 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': '手写体',
-#     'url': 'https://www.calligrapher.ai/',
-#     "catalog": 'tools'  # 小写
+#     'describtion': '建筑网站',
+#     'url': 'https://www.archdaily.cn/cn',
+#     "catalog": 'x'  # 小写
 # })
+
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 #     123, 143, 153, 154, 155, 158, 161])
