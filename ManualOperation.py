@@ -28,8 +28,8 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'GitMind',
-#     'url': 'https://gitmind.cn/',
+#     'describtion': '手写体',
+#     'url': 'https://www.calligrapher.ai/',
 #     "catalog": 'tools'  # 小写
 # })
 
