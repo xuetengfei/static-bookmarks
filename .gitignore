@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/node,react,macos
 # Edit at https://www.gitignore.io/?templates=node,react,macos
 
+.vscode
+
 ### macOS ###
 # General
 .DS_Store

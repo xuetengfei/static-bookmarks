@@ -28,10 +28,13 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': '建筑网站',
-#     'url': 'https://www.archdaily.cn/cn',
-#     "catalog": 'x'  # 小写
+#     'describtion': 'Data Guide',
+#     'url': 'https://www.prisma.io/dataguide/',
+#     "catalog": 'database'  # 小写
 # })
+
+# databases
+# mongodb home page140
 
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
@@ -39,7 +42,7 @@ def DeleteItem(id):
 
 
 # db.table('all').update(
-#     {'describe': 'python-patterns'}, doc_ids=[16])
+#     {'catalog': 'database'}, doc_ids=[140, 141])
 
 # DeleteItem(145)
 
