@@ -41,8 +41,10 @@ def DeleteItem(id):
 #     123, 143, 153, 154, 155, 158, 161])
 
 
-# db.table('all').update(
-#     {'catalog': 'database'}, doc_ids=[140, 141])
+# [Kindle电子书下载_在线阅读-Kindle电子书资源txt-亚马逊Kindle电子书官网](https://www.amazon.cn/Kindle%E7%94%B5%E5%AD%90%E4%B9%A6/b/461-2537587-0192803?ie=UTF8&node=116169071&ref_=nav_topnav_giftcert)
+
+db.table('all').update(
+    {'describtion': '亚马逊Kindle电子书官网'}, doc_ids=[164])
 
 # DeleteItem(145)
 
