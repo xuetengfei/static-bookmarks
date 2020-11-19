@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': '《玩转 Go》',
-#     'url': 'https://wskdsgcf.gitbook.io/mastering-go-zh-cn/',
-#     "catalog": 'go'  # 小写
+#     'describtion': '《软件设计的哲学》',
+#     'url': 'https://gdut_yy.gitee.io/doc-aposd/',
+#     "catalog": 'dev'  # 小写
 # })
 
 
