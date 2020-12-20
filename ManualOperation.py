@@ -28,8 +28,8 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Traversy Media',
-#     'url': 'https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA',
+#     'describtion': 'Dev Ed',
+#     'url': 'https://www.youtube.com/c/DevEd/videos',
 #     "catalog": 'youtube'  # 小写
 # })
 
