@@ -28,11 +28,10 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': '《软件设计的哲学》',
-#     'url': 'https://gdut_yy.gitee.io/doc-aposd/',
-#     "catalog": 'dev'  # 小写
+#     'describtion': 'Traversy Media',
+#     'url': 'https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA',
+#     "catalog": 'youtube'  # 小写
 # })
-
 
 # databases
 # mongodb home page140
