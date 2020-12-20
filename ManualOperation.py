@@ -28,11 +28,16 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Dev Ed',
-#     'url': 'https://www.youtube.com/c/DevEd/videos',
-#     "catalog": 'youtube'  # 小写
+#     'describtion': 'node-best-practices',
+#     'url': 'https://github.com/goldbergyoni/nodebestpractices',
+#     "catalog": 'node'  # 小写
 # })
 
+#
+#
+#
+#
+#
 # databases
 # mongodb home page140
 
