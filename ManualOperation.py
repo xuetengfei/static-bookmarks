@@ -27,17 +27,12 @@ def DeleteItem(id):
     # db.table('all').remove(doc_ids=[162])
 
 
-# AddItem({
-#     'describtion': 'node-best-practices',
-#     'url': 'https://github.com/goldbergyoni/nodebestpractices',
-#     "catalog": 'node'  # 小写
-# })
+AddItem({
+    'describtion': 'Manage HTML DOM',
+    'url': 'https://htmldom.dev/',
+    "catalog": 'frontend'  # 小写
+})
 
-#
-#
-#
-#
-#
 # databases
 # mongodb home page140
 
