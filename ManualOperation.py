@@ -28,14 +28,13 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Manage HTML DOM',
-#     'url': 'https://htmldom.dev/',
+#     'describtion': 'Check Browsers Support',
+#     'url': 'https://checkbrowsers.support/',
 #     "catalog": 'frontend'  # 小写
 # })
 
 # databases
 # mongodb home page140
-
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
