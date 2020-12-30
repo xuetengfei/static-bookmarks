@@ -28,10 +28,11 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Check Browsers Support',
-#     'url': 'https://checkbrowsers.support/',
-#     "catalog": 'frontend'  # 小写
+#     'describtion': 'Popular layouts and patterns made with CSS',
+#     'url': 'https://csslayout.io/patterns',
+#     "catalog": 'css'  # 小写
 # })
+
 
 # databases
 # mongodb home page140
