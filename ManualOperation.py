@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'python-guide-cn',
-#     'url': 'https://pythonguidecn.readthedocs.io/zh/latest/',
-#     "catalog": 'python'  # 小写
+#     'describtion': 'HTTP/3-explained',
+#     'url': 'https://http3-explained.haxx.se/zh/',
+#     "catalog": 'dev'  # 小写
 # })
 
 # https://learnku.com/docs/byte-of-python/2018
