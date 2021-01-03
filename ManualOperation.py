@@ -28,11 +28,10 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Popular layouts and patterns made with CSS',
-#     'url': 'https://csslayout.io/patterns',
-#     "catalog": 'css'  # 小写
+#     'describtion': 'ReleaseEye',
+#     'url': 'https://releaseeye.info/',
+#     "catalog": 'dev'  # 小写
 # })
-
 
 # databases
 # mongodb home page140
