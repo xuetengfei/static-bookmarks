@@ -28,11 +28,12 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'ReleaseEye',
-#     'url': 'https://releaseeye.info/',
-#     "catalog": 'dev'  # 小写
+#     'describtion': 'python-guide-cn',
+#     'url': 'https://pythonguidecn.readthedocs.io/zh/latest/',
+#     "catalog": 'python'  # 小写
 # })
 
+# https://learnku.com/docs/byte-of-python/2018
 # databases
 # mongodb home page140
 
@@ -41,7 +42,7 @@ def DeleteItem(id):
 
 
 # db.table('all').update(
-# {'describtion': '亚马逊Kindle电子书官网'}, doc_ids = [164])
+#     {'url': 'https://learnku.com/docs/byte-of-python/2018'}, doc_ids=[118])
 
 # DeleteItem(145)
 
