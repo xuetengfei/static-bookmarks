@@ -42,9 +42,9 @@ def DeleteItem(id):
 
 
 # db.table('all').update(
-#     {'url': 'https://learnku.com/docs/byte-of-python/2018'}, doc_ids=[118])
+#     {'describtion': 'Python最佳实践指南'}, doc_ids=[118])
 
-# DeleteItem(145)
+# DeleteItem(239)
 
 
 # os.system("sh COMMAND")
