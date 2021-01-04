@@ -28,8 +28,8 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'HTTP/3-explained',
-#     'url': 'https://http3-explained.haxx.se/zh/',
+#     'describtion': '计算机教育中缺失的一课',
+#     'url': 'https://missing-semester-cn.github.io/',
 #     "catalog": 'dev'  # 小写
 # })
 
