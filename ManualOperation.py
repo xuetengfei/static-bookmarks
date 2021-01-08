@@ -28,14 +28,11 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': '计算机教育中缺失的一课',
-#     'url': 'https://missing-semester-cn.github.io/',
-#     "catalog": 'dev'  # 小写
+#     'describtion': 'Faces of Open Source',
+#     'url': 'https://www.facesofopensource.com/',
+#     "catalog": 'x'  # 小写
 # })
 
-# https://learnku.com/docs/byte-of-python/2018
-# databases
-# mongodb home page140
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
