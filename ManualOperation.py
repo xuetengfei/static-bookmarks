@@ -28,8 +28,8 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Faces of Open Source',
-#     'url': 'https://www.facesofopensource.com/',
+#     'describtion': 'Ebook Reader for web',
+#     'url': 'https://www.loudreader.com/',
 #     "catalog": 'x'  # 小写
 # })
 
