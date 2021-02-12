@@ -41,8 +41,7 @@ def DeleteItem(id):
 # db.table('all').update(
 #     {'describtion': 'Python最佳实践指南'}, doc_ids=[118])
 
-# DeleteItem(239)
-
+# DeleteItem(150)
 
 # os.system("sh COMMAND")
 # os.system(COMMAND)
