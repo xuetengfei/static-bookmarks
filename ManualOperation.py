@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Ebook Reader for web',
-#     'url': 'https://www.loudreader.com/',
-#     "catalog": 'x'  # 小写
+#     'describtion': 'Best-Of-Js Hot-Projects',
+#     'url': 'https://bestofjs.org/',
+#     "catalog": 'javascript'  # 小写
 # })
 
 
