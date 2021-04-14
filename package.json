@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html",
-    "git-push": "./git-push-workflow.sh"
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
