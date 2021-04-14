@@ -28,12 +28,13 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Best-Of-Js Hot-Projects',
-#     'url': 'https://bestofjs.org/',
-#     "catalog": 'javascript'  # 小写
+#     'describtion': 'LEMMiNO',
+#     'url': 'https://www.youtube.com/channel/UCRcgy6GzDeccI7dkbbBna3Q',
+#     "catalog": 'youtube'  # 小写
 # })
 
 
+# [(55) LEMMiNO - YouTube]()
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
