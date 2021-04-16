@@ -28,10 +28,11 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'neo-society-documentaries',
-#     'url': 'https://www.youtube.com/c/neoyoutube/featured',
-#     "catalog": 'youtube'  # 小写
+#     'describtion': 'Java and Spring Tutorials',
+#     'url': 'https://github.com/eugenp/tutorials',
+#     "catalog": 'java'  # 小写
 # })
+
 
 # [(55) LEMMiNO - YouTube]()
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
