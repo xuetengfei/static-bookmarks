@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'babel-polyfill';
 import ToggleButton from './comp-toggle-button';
 import FilterCard from './comp-filter-card-body';
-// import ErrorBoundary from './comp-error-boundary';
+import ErrorBoundary from './comp-error-boundary';
 import DB from './db.json';
 import 'spectre.css';
 import './_filters.scss';
@@ -65,4 +65,9 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <ErrorBoundary>
+    <App />
+  </ErrorBoundary>,
+  document.getElementById('root'),
+);
