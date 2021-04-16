@@ -16,7 +16,6 @@ const Loading = () => (
 const App = () => {
   const [data, setData] = useState([]);
   const [catalogList, setCatalogList] = useState([]);
-
   const fetchData = () => {
     const { all } = DB;
     const data = Object.entries(all).map(([key, value]) => ({
