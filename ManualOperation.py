@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Java and Spring Tutorials',
-#     'url': 'https://github.com/eugenp/tutorials',
-#     "catalog": 'java'  # 小写
+#     'describtion': 'TeamStuQ/skill-map: 程序员技能图谱',
+#     'url': 'https://github.com/TeamStuQ/skill-map',
+#     "catalog": 'dev'  # 小写
 # })
 
 
