@@ -28,13 +28,12 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'TeamStuQ/skill-map: 程序员技能图谱',
-#     'url': 'https://github.com/TeamStuQ/skill-map',
-#     "catalog": 'dev'  # 小写
+#     'describtion': 'Mozilla\'s 重新介绍 JavaScript Guide。',
+#     'url': 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript',
+#     "catalog": 'javascript'  # 小写
 # })
 
 
-# [(55) LEMMiNO - YouTube]()
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
