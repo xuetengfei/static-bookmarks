@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Mozilla\'s 重新介绍 JavaScript Guide。',
-#     'url': 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript',
-#     "catalog": 'javascript'  # 小写
+#     'describtion': 'Python进阶',
+#     'url': 'https://eastlakeside.gitbook.io/interpy-zh/',
+#     "catalog": 'python'  # 小写
 # })
 
 
