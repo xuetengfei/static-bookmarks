@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Python进阶',
-#     'url': 'https://eastlakeside.gitbook.io/interpy-zh/',
-#     "catalog": 'python'  # 小写
+#     'describtion': 'css.gg UI Icons',
+#     'url': 'https://github.com/astrit/css.gg',
+#     "catalog": 'css'  # 小写
 # })
 
 
