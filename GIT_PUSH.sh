@@ -2,7 +2,7 @@
 
 echo "----- Start -----"
 
-if [ ! -d $PWD/dist ]; then
+if [ -d $PWD/dist ]; then
     find $PWD/dist | xargs rm -rf
 fi
 
