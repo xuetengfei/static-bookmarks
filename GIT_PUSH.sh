@@ -1,7 +1,8 @@
 #!/bin/bash -e
 
 echo "----- Start -----"
-find $PWD/* -empty | xargs rm
+find $PWD/dist | xargs rm -rf
+# find $PWD/* -empty | xargs rm
 git pull --ff-only
 git add .
 git commit -m "$(date | md5 )"
