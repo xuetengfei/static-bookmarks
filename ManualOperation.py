@@ -28,11 +28,10 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'css.gg UI Icons',
-#     'url': 'https://github.com/astrit/css.gg',
-#     "catalog": 'css'  # 小写
+#     'describtion': 'Java工程师成神之路',
+#     'url': 'https://hollischuang.github.io/toBeTopJavaer/#/',
+#     "catalog": 'java'  # 小写
 # })
-
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
