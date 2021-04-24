@@ -38,7 +38,7 @@ def DeleteItem(id):
 
 
 # db.table('all').update(
-#     {'describtion': 'Python最佳实践指南'}, doc_ids=[118])
+#     {'describtion': '书伴-为阅读而生'}, doc_ids=[163])
 
 # DeleteItem(216)
 
