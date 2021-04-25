@@ -40,7 +40,7 @@ def DeleteItem(id):
 
 
 # db.table('all').update(
-#     {'describtion': 'devOps:Linux,Jenkins,Docker,Kubernetes,Azure,Python...'}, doc_ids=[257])
+#     {'describtion': 'devOps:Linux,Jenkins,Docker,Kubernetes,Azure...'}, doc_ids=[257])
 
 # DeleteItem(125)
 
