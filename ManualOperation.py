@@ -39,7 +39,7 @@ def DeleteItem(id):
 
 
 # db.table('all').update(
-#     {'describtion': '书伴-为阅读而生'}, doc_ids=[163])
+#     {'url': 'https://github.com/justjavac/free-programming-books-zh_CN'}, doc_ids=[125])
 
 # DeleteItem(98)
 
