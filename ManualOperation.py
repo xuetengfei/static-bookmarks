@@ -41,7 +41,7 @@ def DeleteItem(id):
 # db.table('all').update(
 #     {'url': 'https://github.com/justjavac/free-programming-books-zh_CN'}, doc_ids=[125])
 
-# DeleteItem(98)
+# DeleteItem(125)
 
 # os.system("sh COMMAND")
 # os.system(COMMAND)
