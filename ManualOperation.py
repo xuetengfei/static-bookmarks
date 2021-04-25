@@ -28,18 +28,19 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'devops-exercises:Linux,Jenkins...',
+#     'describtion': 'devOps:Linux,Jenkins,Docker,Kubernetes,Azure,Python...',
 #     'url': 'https://github.com/bregman-arie/devops-exercises',
 #     "catalog": 'dev'  # 小写
 # })
 
+# Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
 
 # db.table('all').update(
-#     {'url': 'https://github.com/justjavac/free-programming-books-zh_CN'}, doc_ids=[125])
+#     {'describtion': 'devOps:Linux,Jenkins,Docker,Kubernetes,Azure,Python...'}, doc_ids=[257])
 
 # DeleteItem(125)
 
