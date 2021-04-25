@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'css-grid-generator',
-#     'url': 'https://github.com/sdras/cssgridgenerator',
-#     "catalog": 'css'  # 小写
+#     'describtion': 'Python-实用小例子',
+#     'url': 'https://github.com/jackzhenguo/python-small-examples',
+#     "catalog": 'python'  # 小写
 # })
 
 
