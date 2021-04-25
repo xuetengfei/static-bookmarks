@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Python-实用小例子',
-#     'url': 'https://github.com/jackzhenguo/python-small-examples',
-#     "catalog": 'python'  # 小写
+#     'describtion': 'devops-exercises:Linux,Jenkins...',
+#     'url': 'https://github.com/bregman-arie/devops-exercises',
+#     "catalog": 'dev'  # 小写
 # })
 
 
