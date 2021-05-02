@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Blog | Kent C. Dodds',
-#     'url': 'https://kentcdodds.com/blog/',
-#     "catalog": 'news'  # 小写
+#     'describtion': '30 seconds of code',
+#     'url': 'https://www.30secondsofcode.org/',
+#     "catalog": 'dev'  # 小写
 # })
 
 
@@ -41,9 +41,10 @@ def DeleteItem(id):
 
 
 # db.table('all').update(
-#     {'describtion': 'devOps:Linux,Jenkins,Docker,Kubernetes,Azure...'}, doc_ids=[257])
+#     {'describtion': 'devOps:Linux,Jenkins,Docker,K8s...'}, doc_ids=[26])
 
-# DeleteItem(258)
+
+# DeleteItem(26)
 
 # os.system("sh COMMAND")
 # os.system(COMMAND)

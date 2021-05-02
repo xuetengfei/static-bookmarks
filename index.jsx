@@ -8,6 +8,7 @@ import DB from './db.json';
 import 'spectre.css';
 import './_filters.scss';
 import './_custom.scss';
+import './custom.css';
 
 const Loading = () => (
   <div className="loading loading-lg loading-position"></div>
