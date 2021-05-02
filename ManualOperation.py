@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'lofi.cafe-背景音乐',
-#     'url': 'https://lofi.cafe/',
-#     "catalog": 'x'  # 小写
+#     'describtion': 'Blog | Kent C. Dodds',
+#     'url': 'https://kentcdodds.com/blog/',
+#     "catalog": 'news'  # 小写
 # })
 
 
