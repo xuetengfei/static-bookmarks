@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",
-    "build1": "parcel build index.html",
-    "build": "parcel build index.html --out-dir dist"
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.13.0",

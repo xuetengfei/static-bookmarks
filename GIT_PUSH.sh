@@ -7,6 +7,7 @@ if [ -d $PWD/dist ]; then
 fi
 
 # npx parcel build index.html
+npx parcel build index.html
 
 # find $PWD/* -empty | xargs rm
 git pull --ff-only
