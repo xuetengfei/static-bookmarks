@@ -43,7 +43,7 @@ def DeleteItem(id):
 # db.table('all').update(
 #     {'describtion': 'devOps:Linux,Jenkins,Docker,Kubernetes,Azure...'}, doc_ids=[257])
 
-# DeleteItem(125)
+# DeleteItem(258)
 
 # os.system("sh COMMAND")
 # os.system(COMMAND)
