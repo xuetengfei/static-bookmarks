@@ -28,10 +28,11 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'devOps:Linux,Jenkins,Docker,Kubernetes,Azure,Python...',
-#     'url': 'https://github.com/bregman-arie/devops-exercises',
-#     "catalog": 'dev'  # 小写
+#     'describtion': 'lofi.cafe-背景音乐',
+#     'url': 'https://lofi.cafe/',
+#     "catalog": 'x'  # 小写
 # })
+
 
 # Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions
 
