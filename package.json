@@ -1,11 +1,12 @@
 {
   "name": "parceljs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build1": "parcel build index.html",
+    "build": "parcel build index.html --out-dir dist"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.13.0",
@@ -18,8 +19,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
     "cssnano": "^4.1.10",
     "less": "^3.11.1",
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.26.12"
   }
 }

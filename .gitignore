@@ -156,6 +156,9 @@ sketch
 
 **/*.map
 
-# dist/
-
+dist/
 dist/*.map
+
+.parcel-cache
+
+.babelrc-bak
