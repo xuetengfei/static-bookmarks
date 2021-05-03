@@ -27,12 +27,13 @@ def DeleteItem(id):
     # db.table('all').remove(doc_ids=[162])
 
 
-# AddItem({
-#     'describtion': 'Bash 脚本教程-阮一峰',
-#     'url': 'https://wangdoc.com/bash/',
-#     "catalog": 'linux'  # 小写
-# })
+goal1 = {
+    'describtion': 'Bash scripting-速查表',
+    'url': 'http://caibaojian.com/scb/bash.html',
+    "catalog": 'linux'  # 小写
+}
 
+AddItem(goal)
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
