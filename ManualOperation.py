@@ -28,9 +28,9 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': 'Spring.io',
-#     'url': 'https://spring.io/',
-#     "catalog": 'java'  # 小写
+#     'describtion': 'Bash 脚本教程-阮一峰',
+#     'url': 'https://wangdoc.com/bash/',
+#     "catalog": 'linux'  # 小写
 # })
 
 
