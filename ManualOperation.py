@@ -39,7 +39,7 @@ def DeleteItem(id):
 
 
 # db.table('all').update(
-#     {'describtion': 'devOps:Linux,Jenkins,Docker,K8s...'}, doc_ids=[26])
+#     {'catalog': 'linux'}, doc_ids=[35])
 
 
 # DeleteItem(26)

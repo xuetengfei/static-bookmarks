@@ -6,6 +6,13 @@ if [ -d $PWD/dist ]; then
     find $PWD/dist | xargs rm -rf
 fi
 
+
+if [ -e $PWD/tempCodeRunnerFile.py ]; then
+    rm $PWD/tempCodeRunnerFile.py
+fi
+
+
+
 npx parcel build index.html
 
 # find $PWD/* -empty | xargs rm
