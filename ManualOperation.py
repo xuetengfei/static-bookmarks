@@ -28,13 +28,11 @@ def DeleteItem(id):
 
 
 # AddItem({
-#     'describtion': '30 seconds of code',
-#     'url': 'https://www.30secondsofcode.org/',
-#     "catalog": 'dev'  # 小写
+#     'describtion': 'Spring.io',
+#     'url': 'https://spring.io/',
+#     "catalog": 'java'  # 小写
 # })
 
-
-# Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
