@@ -14,6 +14,7 @@ const Loading = () => (
   <div className="loading loading-lg loading-position"></div>
 );
 
+
 const App = () => {
   const [data, setData] = useState([]);
   const [catalogList, setCatalogList] = useState([]);
