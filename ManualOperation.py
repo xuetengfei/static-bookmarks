@@ -27,14 +27,14 @@ def DeleteItem(id):
     # db.table('all').remove(doc_ids=[162])
 
 
-goal1 = {
-    'describtion': 'Bash scripting-速查表',
-    'url': 'http://caibaojian.com/scb/bash.html',
-    "catalog": 'linux'  # 小写
+goal = {
+    'describtion': 'CSS Gradient',
+    'url': 'https://cssgradient.io/',
+    "catalog": 'css'  # 小写
 }
 
-AddItem(goal)
-
+AddItem(goal1)
+# [CSS Gradient — Generator, Maker, and Background]()
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
