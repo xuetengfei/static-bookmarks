@@ -28,13 +28,12 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'CSS Gradient',
-    'url': 'https://cssgradient.io/',
+    'describtion': 'code-maker-css-html',
+    'url': 'https://webcode.tools/generators/css',
     "catalog": 'css'  # 小写
 }
 
-AddItem(goal1)
-# [CSS Gradient — Generator, Maker, and Background]()
+AddItem(goal)
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
