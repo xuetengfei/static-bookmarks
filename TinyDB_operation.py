@@ -2,14 +2,11 @@
 # coding:utf-8
 
 from tinydb import TinyDB, Query, where
-from os import sys
-import sys
 import os
 import os.path
 
 p = os.path.abspath(__file__)
 path = os.path.abspath(os.path.join(p, os.pardir))+'/db.json'
-COMMAND = os.path.abspath(os.path.join(p, os.pardir))+'/_git_push.sh'
 
 TinyDB.DEFAULT_TABLE = 'all'
 db = TinyDB(path)
@@ -33,7 +30,8 @@ goal = {
     "catalog": 'css'  # 小写
 }
 
-AddItem(goal)
+# AddItem(goal)
+
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
@@ -44,5 +42,5 @@ AddItem(goal)
 
 # DeleteItem(26)
 
-# os.system("sh COMMAND")
-# os.system(COMMAND)
+
+# https://www.css3maker.com/
