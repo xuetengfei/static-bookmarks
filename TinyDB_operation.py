@@ -30,7 +30,7 @@ goal = {
     "catalog": 'x'  # 小写
 }
 
-AddItem(goal)
+# AddItem(goal)
 
 # [(4) Economic Raven - YouTube](https://www.youtube.com/channel/UCj77H54JCFCbKTkIaLC8bRQ)
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
@@ -41,7 +41,7 @@ AddItem(goal)
 #     {'catalog': 'linux'}, doc_ids=[35])
 
 
-# DeleteItem(26)
+# DeleteItem(69)
 
 
 # https://www.css3maker.com/
