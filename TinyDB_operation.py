@@ -25,13 +25,14 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'code-maker-css-html',
-    'url': 'https://webcode.tools/generators/css',
-    "catalog": 'css'  # 小写
+    'describtion': 'Economic Raven',
+    'url': 'https://www.youtube.com/channel/UCj77H54JCFCbKTkIaLC8bRQ',
+    "catalog": 'x'  # 小写
 }
 
-# AddItem(goal)
+AddItem(goal)
 
+# [(4) Economic Raven - YouTube](https://www.youtube.com/channel/UCj77H54JCFCbKTkIaLC8bRQ)
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
