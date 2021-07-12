@@ -25,12 +25,13 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'Academind',
-    'url': 'https://www.youtube.com/c/Academind/playlists',
-    "catalog": 'youtube'  # 小写
+    'describtion': '画渣花小烙-虎嗅网',
+    'url': 'https://www.huxiu.com/member/2979971.html',
+    "catalog": '因吹斯汀'  # 小写
 }
 
-# AddItem(goal)
+
+AddItem(goal)
 
 # [(4) Economic Raven - YouTube](https://www.youtube.com/channel/UCj77H54JCFCbKTkIaLC8bRQ)
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
