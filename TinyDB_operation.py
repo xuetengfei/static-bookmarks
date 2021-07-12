@@ -25,9 +25,9 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'Economic Raven',
-    'url': 'https://www.youtube.com/channel/UCj77H54JCFCbKTkIaLC8bRQ',
-    "catalog": 'x'  # 小写
+    'describtion': 'Academind',
+    'url': 'https://www.youtube.com/c/Academind/playlists',
+    "catalog": 'youtube'  # 小写
 }
 
 # AddItem(goal)
