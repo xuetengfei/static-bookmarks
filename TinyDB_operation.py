@@ -31,7 +31,7 @@ goal = {
 }
 
 
-AddItem(goal)
+# AddItem(goal)
 
 # [(4) Economic Raven - YouTube](https://www.youtube.com/channel/UCj77H54JCFCbKTkIaLC8bRQ)
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
@@ -39,10 +39,10 @@ AddItem(goal)
 
 
 # db.table('all').update(
-#     {'catalog': 'linux'}, doc_ids=[35])
+#     {'catalog': '如何正确的学习Node.js'}, doc_ids=[4])
 
 
-# DeleteItem(69)
+# DeleteItem(270)
 
 
 # https://www.css3maker.com/
