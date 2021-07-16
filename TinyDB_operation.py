@@ -25,15 +25,15 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': '画渣花小烙-虎嗅网',
-    'url': 'https://www.huxiu.com/member/2979971.html',
+    'describtion': '花小烙-bilibili',
+    'url': 'https://space.bilibili.com/402576555/dynamic',
     "catalog": '因吹斯汀'  # 小写
 }
 
 
 # AddItem(goal)
 
-# [(4) Economic Raven - YouTube](https://www.youtube.com/channel/UCj77H54JCFCbKTkIaLC8bRQ)
+
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
@@ -42,7 +42,6 @@ goal = {
 #     {'describtion': '如何正确的学习Node.js', 'describe': '如何正确的学习Node.js'}, doc_ids=[4])
 
 
-# DeleteItem(270)
-
+# DeleteItem(271)
 
 # https://www.css3maker.com/
