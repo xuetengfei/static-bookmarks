@@ -15,6 +15,7 @@ fi
 
 npx parcel build index.html
 
+cp ./db.json ./dist/db.json
 # find $PWD/* -empty | xargs rm
 git pull --ff-only
 git add .

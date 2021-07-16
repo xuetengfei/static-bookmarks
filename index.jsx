@@ -4,7 +4,7 @@ import 'babel-polyfill';
 import ToggleButton from './comp-toggle-button';
 import FilterCard from './comp-filter-card-body';
 import ErrorBoundary from './comp-error-boundary';
-import DB from './db.json';
+// import DB from './db.json';
 import 'spectre.css';
 import './_filters.scss';
 import './_custom.scss';
@@ -37,29 +37,30 @@ const App = () => {
   };
 
   const fetchData2 = async () => {
-    // const r1 = await fetch('./a.json', {
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     Accept: 'application/json',
-    //   },
-    // });
-    // console.log('r1', r1);
-    // const r2 = await JSON.parse(r1);
-    // console.log('r2', r2);
-    fetch('./db.json')
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        console.log(myJson);
-      })
-      .finally(err => {
-        err && console.log(err);
-      });
+    const response = await fetch('./db.json');
+    console.log('response', response);
+    const DB = await response.json();
+    console.log('DB', DB);
+    const { all } = DB;
+    const data = Object.entries(all).map(([key, value]) => ({
+      id: key,
+      value,
+    }));
+    const catalogList = data
+      .map(v => v.value.catalog)
+      .filter((el, idx, arr) => idx === arr.indexOf(el))
+      .sort();
+    setCatalogList(
+      ['all', ...catalogList].map((v, id) => ({
+        name: v,
+        idx: id,
+      })),
+    );
+    setData(data);
   };
 
   useEffect(() => {
-    fetchData();
+    // fetchData();
     fetchData2();
   }, []);
 
