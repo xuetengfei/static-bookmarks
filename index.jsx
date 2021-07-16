@@ -38,9 +38,9 @@ const App = () => {
 
   const fetchData2 = async () => {
     const response = await fetch('./db.json');
-    console.log('response', response);
+    // console.log('response', response);
     const DB = await response.json();
-    console.log('DB', DB);
+    // console.log('DB', DB);
     const { all } = DB;
     const data = Object.entries(all).map(([key, value]) => ({
       id: key,
