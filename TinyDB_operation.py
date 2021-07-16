@@ -39,7 +39,7 @@ goal = {
 
 
 # db.table('all').update(
-#     {'catalog': '如何正确的学习Node.js'}, doc_ids=[4])
+#     {'catalog': 'node', 'describtion': '如何正确的学习Node.js4'}, doc_ids=[4])
 
 
 # DeleteItem(270)
