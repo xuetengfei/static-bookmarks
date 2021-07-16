@@ -36,9 +36,33 @@ const App = () => {
     setData(data);
   };
 
+  const fetchData2 = async () => {
+    // const r1 = await fetch('./a.json', {
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     Accept: 'application/json',
+    //   },
+    // });
+    // console.log('r1', r1);
+    // const r2 = await JSON.parse(r1);
+    // console.log('r2', r2);
+    fetch('./db.json')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+      })
+      .finally(err => {
+        err && console.log(err);
+      });
+  };
+
   useEffect(() => {
     fetchData();
+    fetchData2();
   }, []);
+
   const handelToggleDarkMode = () => {
     var element = document.body;
     element.classList.toggle('dark-mode');
