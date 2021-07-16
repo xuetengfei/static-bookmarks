@@ -25,11 +25,12 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': '花小烙-bilibili',
-    'url': 'https://space.bilibili.com/402576555/dynamic',
+    'describtion': '培根悖论唠唠嗑',
+    'url': 'https://space.bilibili.com/386869863/video',
     "catalog": '因吹斯汀'  # 小写
 }
 
+# [培根悖论唠唠嗑的个人空间_哔哩哔哩_Bilibili]()
 
 # AddItem(goal)
 
@@ -42,6 +43,6 @@ goal = {
 #     {'describtion': '如何正确的学习Node.js', 'describe': '如何正确的学习Node.js'}, doc_ids=[4])
 
 
-# DeleteItem(271)
+# DeleteItem(207)
 
 # https://www.css3maker.com/
