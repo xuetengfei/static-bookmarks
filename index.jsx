@@ -4,7 +4,6 @@ import 'babel-polyfill';
 import ToggleButton from './comp-toggle-button';
 import FilterCard from './comp-filter-card-body';
 import ErrorBoundary from './comp-error-boundary';
-// import DB from './db.json';
 import 'spectre.css';
 import './_filters.scss';
 import './_custom.scss';
@@ -17,30 +16,10 @@ const Loading = () => (
 const App = () => {
   const [data, setData] = useState([]);
   const [catalogList, setCatalogList] = useState([]);
-  const fetchData = () => {
-    const { all } = DB;
-    const data = Object.entries(all).map(([key, value]) => ({
-      id: key,
-      value,
-    }));
-    const catalogList = data
-      .map(v => v.value.catalog)
-      .filter((el, idx, arr) => idx === arr.indexOf(el))
-      .sort();
-    setCatalogList(
-      ['all', ...catalogList].map((v, id) => ({
-        name: v,
-        idx: id,
-      })),
-    );
-    setData(data);
-  };
 
   const fetchData2 = async () => {
     const response = await fetch('./db.json');
-    // console.log('response', response);
     const DB = await response.json();
-    // console.log('DB', DB);
     const { all } = DB;
     const data = Object.entries(all).map(([key, value]) => ({
       id: key,
@@ -60,7 +39,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    // fetchData();
     fetchData2();
   }, []);
 
