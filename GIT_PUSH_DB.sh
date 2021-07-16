@@ -2,8 +2,8 @@
 
 echo "----- Start -----"
 
-rm ./dist/*.map
-cp ./db.json ./dist/db.json
+rm $PWD/dist/*.map
+cp $PWD/db.json $PWD/dist/db.json
 # find $PWD/* -empty | xargs rm
 git pull --ff-only
 git add .
