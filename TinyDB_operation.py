@@ -25,9 +25,9 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'Nodejs-Roadmap',
-    'url': 'https://github.com/qufei1993/Nodejs-Roadmap',
-    "catalog": 'node'  # 小写
+    'describtion': '圈内师老师',
+    'url': 'https://space.bilibili.com/534964283',
+    "catalog": '因吹斯汀'  # 小写
 }
 
 # AddItem(goal)
@@ -41,4 +41,4 @@ goal = {
 #     {'describtion': '如何正确的学习Node.js', 'describe': '如何正确的学习Node.js'}, doc_ids=[4])
 
 
-# DeleteItem(275)
+# DeleteItem(268)
