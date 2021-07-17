@@ -33,12 +33,14 @@ goal = {
 # AddItem(goal)
 
 
+# [圈内师老师的个人空间_哔哩哔哩_Bilibili]()
+
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
 
 
 # db.table('all').update(
-#     {'describtion': '如何正确的学习Node.js', 'describe': '如何正确的学习Node.js'}, doc_ids=[4])
+#     {'url': 'https://space.bilibili.com/534964283/video'}, doc_ids=[277])
 
 
 # DeleteItem(268)
