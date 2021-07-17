@@ -25,12 +25,10 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': '培根悖论唠唠嗑',
-    'url': 'https://space.bilibili.com/386869863/video',
-    "catalog": '因吹斯汀'  # 小写
+    'describtion': '掘金翻译',
+    'url': 'https://juejin.cn/tag/%E6%8E%98%E9%87%91%E7%BF%BB%E8%AF%91%E8%AE%A1%E5%88%92',
+    "catalog": 'news'  # 小写
 }
-
-# [培根悖论唠唠嗑的个人空间_哔哩哔哩_Bilibili]()
 
 # AddItem(goal)
 
@@ -44,5 +42,3 @@ goal = {
 
 
 # DeleteItem(207)
-
-# https://www.css3maker.com/
