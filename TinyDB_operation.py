@@ -41,4 +41,4 @@ goal = {
 #     {'describtion': '如何正确的学习Node.js', 'describe': '如何正确的学习Node.js'}, doc_ids=[4])
 
 
-# DeleteItem(207)
+# DeleteItem(275)
