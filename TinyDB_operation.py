@@ -25,7 +25,7 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': '掘金翻译',
+    'describtion': '掘金翻译计划',
     'url': 'https://juejin.cn/tag/%E6%8E%98%E9%87%91%E7%BF%BB%E8%AF%91%E8%AE%A1%E5%88%92',
     "catalog": 'news'  # 小写
 }
