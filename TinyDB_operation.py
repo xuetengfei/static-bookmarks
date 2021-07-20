@@ -21,19 +21,17 @@ def AddItem(item):
 def DeleteItem(id):
     db.table('all').remove(doc_ids=[id])
     print('Delete Item Successed !!!')
-    # db.table('all').remove(doc_ids=[162])
 
 
 goal = {
-    'describtion': '圈内师老师',
-    'url': 'https://space.bilibili.com/534964283',
-    "catalog": '因吹斯汀'  # 小写
+    'describtion': 'Fireship',
+    'url': 'https://www.youtube.com/c/Fireship/videos',
+    "catalog": 'youtube'  # 小写
 }
 
 # AddItem(goal)
 
-
-# [圈内师老师的个人空间_哔哩哔哩_Bilibili]()
+# DeleteItem(268)
 
 # table = db.table('all').update({'catalog': 'x'}, doc_ids=[
 # 123, 143, 153, 154, 155, 158, 161])
@@ -41,6 +39,3 @@ goal = {
 
 # db.table('all').update(
 #     {'url': 'https://space.bilibili.com/534964283/video'}, doc_ids=[277])
-
-
-# DeleteItem(268)
