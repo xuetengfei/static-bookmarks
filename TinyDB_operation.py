@@ -24,9 +24,9 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'Fireship',
-    'url': 'https://www.youtube.com/c/Fireship/videos',
-    "catalog": 'youtube'  # 小写
+    'describtion': 'IT熊猫-计算机书籍',
+    'url': 'https://www.itpanda.net/book/',
+    "catalog": 'x'  # 小写
 }
 
 # AddItem(goal)
