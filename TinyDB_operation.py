@@ -24,9 +24,9 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'IT熊猫-计算机书籍',
-    'url': 'https://www.itpanda.net/book/',
-    "catalog": 'x'  # 小写
+    'describtion': 'MongoDB中文手册',
+    'url': 'https://docs.mongoing.com/',
+    "catalog": 'database'  # 小写
 }
 
 # AddItem(goal)
