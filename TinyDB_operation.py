@@ -24,8 +24,8 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'MongoDB中文手册',
-    'url': 'https://docs.mongoing.com/',
+    'describtion': 'Learn SQL with Socratica',
+    'url': 'https://www.youtube.com/playlist?list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5tt',
     "catalog": 'database'  # 小写
 }
 
