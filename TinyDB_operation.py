@@ -38,4 +38,4 @@ goal = {
 
 
 # db.table('all').update(
-#     {'url': 'https://space.bilibili.com/534964283/video'}, doc_ids=[277])
+#     {'describtion': 'Learn SQL with Socratica-youtube'}, doc_ids=[281])
