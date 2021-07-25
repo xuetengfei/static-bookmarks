@@ -38,4 +38,4 @@ goal = {
 
 
 # db.table('all').update(
-#     {'describtion': 'Learn SQL with Socratica Youtube'}, doc_ids=[281])
+#     {'catalog': '因吹斯汀'}, doc_ids=[169, 144, 114, 151, 133, 143])
