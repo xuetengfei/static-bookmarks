@@ -37,5 +37,5 @@ goal = {
 # 123, 143, 153, 154, 155, 158, 161])
 
 
-# db.table('all').update(
-#     {'describtion': 'Learn SQL with Socratica-youtube'}, doc_ids=[281])
+db.table('all').update(
+    {'describtion': 'Learn SQL with Socratica Youtube'}, doc_ids=[281])
