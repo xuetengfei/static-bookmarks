@@ -15,9 +15,10 @@ const Loading = () => (
 
 const App = () => {
   const [data, setData] = useState([]);
+  const [count, setCount] = useState(0);
   const [catalogList, setCatalogList] = useState([]);
 
-  const fetchData2 = async () => {
+  const fetchData = async () => {
     const response = await fetch('./db.json');
     const DB = await response.json();
     const { all } = DB;
@@ -39,31 +40,45 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchData2();
-  }, []);
+    fetchData();
+  }, [count]);
 
   const handelToggleDarkMode = () => {
     var element = document.body;
     element.classList.toggle('dark-mode');
   };
+
+  const handelRefresh = () => {
+    setCount(c => c + 1);
+  };
+
+  if (!data.length) {
+    return <Loading />;
+  }
+
   return (
     <>
       <div className="nav">
-        <button className="btn btn-sm" onClick={handelToggleDarkMode}>
-          Toggle Mode
-        </button>
-      </div>
-      {!data.length ? (
-        <Loading />
-      ) : (
-        <div className="column col-12">
-          <div className="filter">
-            <ToggleButton catalogList={catalogList} />
-            <div className="divider-space"></div>
-            <FilterCard data={data} catalogList={catalogList} />
-          </div>
+        <div>
+          <button
+            className="btn btn-sm"
+            onClick={handelToggleDarkMode}
+            style={{ marginRight: '20px' }}
+          >
+            Toggle Mode
+          </button>
+          <button className="btn btn-sm" onClick={handelRefresh}>
+            Refresh
+          </button>
         </div>
-      )}
+      </div>
+      <div className="column col-12">
+        <div className="filter">
+          <ToggleButton catalogList={catalogList} />
+          <div className="divider-space"></div>
+          <FilterCard data={data} catalogList={catalogList} />
+        </div>
+      </div>
     </>
   );
 };
