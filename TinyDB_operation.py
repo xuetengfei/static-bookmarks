@@ -24,9 +24,9 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'Learn SQL with Socratica',
-    'url': 'https://www.youtube.com/playlist?list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5tt',
-    "catalog": 'database'  # 小写
+    'describtion': '程序员英语词汇宝典',
+    'url': 'https://learn-english.dev/',
+    "catalog": 'dev'  # 小写
 }
 
 # AddItem(goal)
