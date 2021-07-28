@@ -13,24 +13,15 @@ db = TinyDB(path)
 
 ITEM = Query()
 
-print(ITEM)
-
-
 # db.table('all').remove(doc_ids=[id])
-
-URL = 'https://webcode.tools/generators/css'
-
-goal = db.table('all').search(ITEM.url == URL)
-print(goal)
+# URL = 'https://webcode.tools/generators/css'
+# goal = db.table('all').search(ITEM.url == URL)
+# print(goal)
 
 
-el = db.table('all').get(ITEM.url == URL)
-print(el.doc_id)
+el = db.table('all').search(ITEM.catalog == 'javascript')
 
-
-#  'describtion': 'code-maker-css-html',
-#  'url': 'https://webcode.tools/generators/css',
-#  "catalog": 'css'  # 小写
-
-# db.table('all').update(
-#     {'describtion': 'layouts-patterns-with-CSS'}, doc_ids=[237])
+elIDs = []
+for item in el:
+    elIDs.append(item.doc_id)
+print(elIDs)

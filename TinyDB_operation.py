@@ -33,9 +33,7 @@ goal = {
 
 # DeleteItem(268)
 
-# table = db.table('all').update({'catalog': 'x'}, doc_ids=[
-# 123, 143, 153, 154, 155, 158, 161])
-
+a = []
 
 # db.table('all').update(
-#     {'catalog': 'js'}, doc_ids=[284])
+#     {'catalog': 'js'}, doc_ids=a)
