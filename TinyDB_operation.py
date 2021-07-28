@@ -24,9 +24,9 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': '程序员英语词汇宝典',
-    'url': 'https://learn-english.dev/',
-    "catalog": 'dev'  # 小写
+    'describtion': 'TypeScript 文档教程',
+    'url': 'https://www.javascriptcn.com/typescript/ts-tutorial.html',
+    "catalog": 'node'  # 小写
 }
 
 # AddItem(goal)
@@ -38,4 +38,4 @@ goal = {
 
 
 # db.table('all').update(
-#     {'catalog': '因吹斯汀'}, doc_ids=[169, 144, 114, 151, 133, 143])
+#     {'catalog': 'js'}, doc_ids=[284])
