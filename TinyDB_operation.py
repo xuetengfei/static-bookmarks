@@ -26,11 +26,10 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': '冲浪普拉斯-商业侃哥',
-    'url': 'https://space.bilibili.com/290548469/video',
+    'describtion': 'wikiHow:万事指南',
+    'url': 'https://zh.wikihow.com',
     "catalog": '因吹斯汀'  # 小写
 }
-
 # AddItem(goal)
 
 # DeleteItem(268)
