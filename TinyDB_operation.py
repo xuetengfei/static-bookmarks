@@ -26,10 +26,12 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': 'wikiHow:万事指南',
-    'url': 'https://zh.wikihow.com',
-    "catalog": '因吹斯汀'  # 小写
+    'describtion': 'Developer Roadmaps',
+    'url': 'https://roadmap.sh/',
+    "catalog": 'dev'  # 小写
 }
+
+
 # AddItem(goal)
 
 # DeleteItem(268)
