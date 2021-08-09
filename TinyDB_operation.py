@@ -22,15 +22,12 @@ def DeleteItem(id):
     db.table('all').remove(doc_ids=[id])
     print('Delete Item Successed !!!')
 
-# [冲浪普拉斯的个人空间_哔哩哔哩_Bilibili]()
-
 
 goal = {
-    'describtion': 'Developer Roadmaps',
-    'url': 'https://roadmap.sh/',
-    "catalog": 'dev'  # 小写
+    'describtion': '大连老湿王博文',
+    'url': 'https://space.bilibili.com/56065480/video',
+    "catalog": '因吹斯汀'  # 小写
 }
-
 
 # AddItem(goal)
 
