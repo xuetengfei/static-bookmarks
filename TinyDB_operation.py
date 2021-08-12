@@ -24,11 +24,10 @@ def DeleteItem(id):
 
 
 goal = {
-    'describtion': '大连老湿王博文',
-    'url': 'https://space.bilibili.com/56065480/video',
+    'describtion': 'TED-Ed',
+    'url': 'https://www.youtube.com/teded/videos',
     "catalog": '因吹斯汀'  # 小写
 }
-
 # AddItem(goal)
 
 # DeleteItem(268)
