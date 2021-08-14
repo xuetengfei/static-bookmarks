@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import 'babel-polyfill';
+import 'spectre.css';
 import ToggleButton from './comp-toggle-button';
 import FilterCard from './comp-filter-card-body';
 import ErrorBoundary from './comp-error-boundary';
-import 'spectre.css';
+import 'babel-polyfill';
 import './_filters.scss';
 import './_custom.scss';
 import './custom.css';

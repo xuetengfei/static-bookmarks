@@ -1,0 +1,1 @@
+cp ./db.json ./dist/db.json

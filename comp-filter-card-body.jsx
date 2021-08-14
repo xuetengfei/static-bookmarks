@@ -1,5 +1,23 @@
 import React from 'react';
 
+const Item = props => {
+  const { value, id } = props;
+  const elementProps = {
+    href: value.url,
+    target: '_blank',
+  };
+  if (value.detail) {
+    elementProps['data-tooltip'] = value.detail;
+    elementProps['className'] = 'tooltip';
+  }
+  return (
+    <div>
+      <a {...elementProps}>{value.describe || value.describtion}</a>
+      <sub className="book-mark-item-id">{id}</sub>
+    </div>
+  );
+};
+
 const Component = props => {
   const { data, catalogList } = props;
   return (
@@ -16,12 +34,8 @@ const Component = props => {
             <div className="card">
               <div className="card-header">
                 <div className="card-title text-bold">
-                  <a href={value.url} target="_blank">
-                    {value.describe || value.describtion}
-                  </a>
-                  <sub className="book-mark-item-id">{id}</sub>
+                  <Item id={id} value={value} />
                 </div>
-                {/* <div className="card-subtitle text-gray">{id}</div> */}
               </div>
             </div>
           </div>

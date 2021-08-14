@@ -23,14 +23,21 @@ def DeleteItem(id):
     print('Delete Item Successed !!!')
 
 
+# [浏览器的工作原理：现代网络浏览器幕后揭秘 - HTML5 Rocks]()
 goal = {
-    'describtion': 'TED-Ed',
-    'url': 'https://www.youtube.com/teded/videos',
-    "catalog": '因吹斯汀'  # 小写
+    'describtion': '浏览器的工作原理',
+    'detail': '浏览器的工作原理\n现代网络浏览器幕后揭秘',
+    'url': 'https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/',
+    "catalog": 'dev'  # 小写
 }
+
+# Add the \n string between any text for multiline tooltips.
+# <button class="btn tooltip" data-tooltip="First Line Tooltip Text \n Second Line Tooltip Text">multiline tooltip</button>
+
+
 # AddItem(goal)
 
-# DeleteItem(268)
+# DeleteItem(293)
 
 a = []
 
