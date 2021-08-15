@@ -2,17 +2,17 @@ import React from 'react';
 
 const Item = props => {
   const { value, id } = props;
-  const elementProps = {
-    href: value.url,
-    target: '_blank',
-  };
+
+  const elementProps = {};
   if (value.detail) {
     elementProps['data-tooltip'] = value.detail;
     elementProps['className'] = 'tooltip';
   }
   return (
-    <div>
-      <a {...elementProps}>{value.describe || value.describtion}</a>
+    <div {...elementProps}>
+      <a href={value.url} target="_blank">
+        {value.describe || value.describtion}
+      </a>
       <sub className="book-mark-item-id">{id}</sub>
     </div>
   );
