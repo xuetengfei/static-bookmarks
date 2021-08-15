@@ -41,5 +41,5 @@ goal = {
 
 a = []
 
-# db.table('all').update(
-#     {'catalog': 'js'}, doc_ids=a)
+db.table('all').update(
+    {'describtion': 'css通用模式', 'detail': 'COLLECTION OF 102 PATTERNS\nCovers are made with CSS only.\n Inspect them!', }, doc_ids=a)
