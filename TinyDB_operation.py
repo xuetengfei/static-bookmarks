@@ -39,7 +39,7 @@ goal = {
 
 # DeleteItem(293)
 
-a = []
+# a = []
 
 db.table('all').update(
-    {'describtion': 'css通用模式', 'detail': 'COLLECTION OF 102 PATTERNS\nCovers are made with CSS only.\n Inspect them!', }, doc_ids=a)
+    {'describtion': 'web-code-生成器', 'detail': '复制粘贴的生成器\n包括css、html', }, doc_ids=a)
