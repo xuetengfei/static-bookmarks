@@ -38,6 +38,6 @@ goal = {
 # DeleteItem(293)
 
 
-# a = []
-# db.table('all').update(
-#     {'describtion': 'web-code-生成器', 'detail': '复制粘贴的生成器\n包括css、html', }, doc_ids=a)
+a = []
+db.table('all').update(
+    {'describtion': 'Economic Raven(经济乌鸦)', 'detail': '《经济学乌鸦》是一种简单有趣的每周经济学教材\n没有复杂的图表，没有复杂的公式\n让那些一直想学习的人们更容易理解经济', }, doc_ids=a)
