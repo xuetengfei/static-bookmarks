@@ -25,21 +25,19 @@ def DeleteItem(id):
 
 # [浏览器的工作原理：现代网络浏览器幕后揭秘 - HTML5 Rocks]()
 goal = {
-    'describtion': '浏览器的工作原理',
-    'detail': '浏览器的工作原理\n现代网络浏览器幕后揭秘',
-    'url': 'https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/',
-    "catalog": 'dev'  # 小写
+    'describtion': '10个现代CSS布局',
+    'detail': '10个现代CSS布局和大小调整技术\n突出了单行样式代码的健壮性和影响力',
+    # Add the \n string between any text for multiline tooltips.
+    'url': 'https://1linelayouts.glitch.me/',
+    "catalog": 'css'  # 小写
 }
-
-# Add the \n string between any text for multiline tooltips.
-# <button class="btn tooltip" data-tooltip="First Line Tooltip Text \n Second Line Tooltip Text">multiline tooltip</button>
 
 
 # AddItem(goal)
 
 # DeleteItem(293)
 
-# a = []
 
-db.table('all').update(
-    {'describtion': 'web-code-生成器', 'detail': '复制粘贴的生成器\n包括css、html', }, doc_ids=a)
+# a = []
+# db.table('all').update(
+#     {'describtion': 'web-code-生成器', 'detail': '复制粘贴的生成器\n包括css、html', }, doc_ids=a)
