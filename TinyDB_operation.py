@@ -23,12 +23,13 @@ def DeleteItem(id):
     print('Delete Item Successed !!!')
 
 
+# [(8) the roadmap - YouTube](https://www.youtube.com/c/theroadmap/videos)
 goal = {
-    'describtion': 'browser based IDE - Replit',
-    'detail': 'The collaborative browser based IDE',
-    # Add the \n string between any text for multiline tooltips.
-    'url': 'https://replit.com/',
+    'describtion': 'the roadmap channel-YouTube',
+    'detail': '该路线图的特点是\n最好的在线web开发\n和编程讲座的各种\n计算机科学知识和\n最新的web技术\n包括系统设计数据库，全栈开发和更多',
+    'url': 'https://www.youtube.com/c/theroadmap/videos',
     "catalog": 'dev'  # 小写
+    # detail:Add the \n string between any text for multiline tooltips.
 }
 
 # AddItem(goal)
