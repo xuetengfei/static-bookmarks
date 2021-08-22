@@ -23,16 +23,13 @@ def DeleteItem(id):
     print('Delete Item Successed !!!')
 
 
-# Welcome to Learn Anything, the platform for knowledge discovery that helps you understand any topic through the most efficient paths, as voted by the community.
-# [浏览器的工作原理：现代网络浏览器幕后揭秘 - HTML5 Rocks]()
 goal = {
-    'describtion': 'Learn Anything Roadmap Platform ',
-    'detail': 'This platform for knowledge discovery\nthat helps you understand any topic\nthrough the most efficient paths\nas voted by the community',
+    'describtion': 'browser based IDE - Replit',
+    'detail': 'The collaborative browser based IDE',
     # Add the \n string between any text for multiline tooltips.
-    'url': 'https://learn-anything.xyz/',
+    'url': 'https://replit.com/',
     "catalog": 'dev'  # 小写
 }
-
 
 # AddItem(goal)
 
