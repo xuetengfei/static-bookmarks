@@ -1,12 +1,9 @@
 #!/bin/bash -e
-
 echo "----- Start -----"
 
-
-
-if [ -e $PWD/dist/*map ]; then
-    rm $PWD/dist/*.map
-fi
+# if [ -e $PWD/dist/*map ]; then
+#     rm $PWD/dist/*.map
+# fi
 
 cp $PWD/db.json $PWD/dist/db.json
 

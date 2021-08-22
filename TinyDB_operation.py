@@ -23,11 +23,10 @@ def DeleteItem(id):
     print('Delete Item Successed !!!')
 
 
-# [(8) the roadmap - YouTube](https://www.youtube.com/c/theroadmap/videos)
 goal = {
-    'describtion': 'the roadmap channel',
-    'detail': '最好的在线web开发和编程讲座和最新的web技术,\n各种计算机科学知识包括系统设计数据库，全栈开发',
-    'url': 'https://www.youtube.com/c/theroadmap/videos',
+    'describtion': 'HusseinNasser dev channel',
+    'detail': '',
+    'url': 'https://www.youtube.com/c/HusseinNasser-software-engineering/playlists',
     "catalog": 'dev'  # 小写
     # detail:Add the \n string between any text for multiline tooltips.
 }
@@ -39,4 +38,4 @@ goal = {
 
 a = []
 db.table('all').update(
-    {'describtion': 'Economic Raven(经济乌鸦)', 'detail': '经济学乌鸦是一种简单有趣的经济学教材\n没有复杂的图表，没有复杂的公式\n让那些一直想学习的人们更容易理解经济', }, doc_ids=a)
+    {'describtion': 'Economic Raven(经济乌鸦)', 'detail': '经济学乌理解经济', }, doc_ids=a)
