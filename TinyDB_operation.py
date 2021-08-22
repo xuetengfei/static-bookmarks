@@ -32,9 +32,9 @@ goal = {
     # detail:Add the \n string between any text for multiline tooltips.
 }
 
-AddItem(goal)
+# AddItem(goal)
 
-# DeleteItem(296)
+# DeleteItem(53)
 
 
 a = []
