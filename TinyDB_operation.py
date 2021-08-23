@@ -40,4 +40,4 @@ goal = {
 #     {'catalog': 'dev', }, doc_ids=a)
 
 
-# DeleteItem(116)
+# DeleteItem(299)
