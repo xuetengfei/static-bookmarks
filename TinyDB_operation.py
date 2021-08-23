@@ -36,6 +36,7 @@ goal = {
 # DeleteItem(53)
 
 
-a = []
-db.table('all').update(
-    {'describtion': 'Economic Raven(经济乌鸦)', 'detail': '经济学乌理解经济', }, doc_ids=a)
+# a = [223, 224, 227, 231, 267, 278]
+
+# db.table('all').update(
+#     {'catalog': 'dev', }, doc_ids=a)
