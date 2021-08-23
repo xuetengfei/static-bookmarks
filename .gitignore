@@ -162,5 +162,8 @@ dist/*.map
 .parcel-cache
 
 .babelrc-bak
-
 tempCodeRunnerFile.py
+db.csv
+*.bak*
+TinyDB_operation_2.py
+db.js
