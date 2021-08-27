@@ -34,10 +34,10 @@ goal = {
 # AddItem(goal)
 
 
-# a = [223, 224, 227, 231, 267, 278]
+# a = [298]
 
 # db.table('all').update(
-#     {'catalog': 'dev', }, doc_ids=a)
+#     {'url': 'https://space.bilibili.com/384068749/video', }, doc_ids=a)
 
 
-# DeleteItem(299)
+# DeleteItem(198)
