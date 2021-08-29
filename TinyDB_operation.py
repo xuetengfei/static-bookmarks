@@ -33,11 +33,8 @@ goal = {
 
 # AddItem(goal)
 
-
-# a = [213]
-
-# db.table('all').update(
-#     {'catalog': 'tools', }, doc_ids=a)
-
-
 # DeleteItem([])
+
+
+db.table('all').update(
+    {'catalog': 'devOps', }, doc_ids=[257])
