@@ -40,4 +40,4 @@ goal = {
 #     {'url': 'https://space.bilibili.com/384068749/video', }, doc_ids=a)
 
 
-DeleteItem([3, 5, 62])
+DeleteItem([])
