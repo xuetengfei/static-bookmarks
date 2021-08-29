@@ -18,8 +18,8 @@ def AddItem(item):
     print('Insert Item  Successed!!!')
 
 
-def DeleteItem(id):
-    db.table('all').remove(doc_ids=[id])
+def DeleteItem(ids):
+    db.table('all').remove(doc_ids=ids)
     print('Delete Item Successed !!!')
 
 
@@ -40,4 +40,4 @@ goal = {
 #     {'url': 'https://space.bilibili.com/384068749/video', }, doc_ids=a)
 
 
-# DeleteItem(198)
+DeleteItem([])
