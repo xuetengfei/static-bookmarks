@@ -35,6 +35,5 @@ goal = {
 
 # DeleteItem([307])
 
-
 # db.table('all').update(
-#     {'url': 'http://www.ruanyifeng.com/blog/', 'describtion': '阮一峰-科技爱好者周刊'}, doc_ids=[74])
+#     {'describe': '阮一峰-科技爱好者周刊'}, doc_ids=[74])
