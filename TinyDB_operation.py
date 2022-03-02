@@ -33,7 +33,7 @@ goal = {
 
 # AddItem(goal)
 
-DeleteItem([319])
+# DeleteItem([317, 318, 320])
 
 # db.table('all').update(
 #     {'describe': '阮一峰-科技爱好者周刊'}, doc_ids=[74])
