@@ -55,6 +55,7 @@ const App = () => {
   const handelInputChange = e => {
     e.preventDefault();
     const val = e.target.value;
+    console.log('val', val);
     setSearchValue(val);
     if (val) {
       filterFetchData(String(val).toLowerCase());
@@ -63,8 +64,10 @@ const App = () => {
     }
   };
   const filterFetchData = str => {
-    const filteredData = data.filter(({ value: { describe, describtion } }) =>
-      (describe || describtion).toLowerCase().includes(str),
+    console.log('str', str);
+    const filteredData = originData.current.filter(
+      ({ value: { describe, describtion } }) =>
+        (describe || describtion).toLowerCase().includes(str),
     );
     // console.log('filteredData', filteredData);
     setData(filteredData);
