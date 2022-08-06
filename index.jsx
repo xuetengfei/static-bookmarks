@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import 'spectre.css';
 import ToggleButton from './comp-toggle-button';
@@ -14,9 +14,15 @@ const Loading = () => (
 );
 
 const App = () => {
+  const originData = useRef(null);
   const [data, setData] = useState([]);
   const [count, setCount] = useState(0);
   const [catalogList, setCatalogList] = useState([]);
+  const [searchValue, setSearchValue] = useState('');
+
+  useEffect(() => {
+    fetchData();
+  }, [count]);
 
   const fetchData = async () => {
     const response = await fetch('./db.json');
@@ -37,39 +43,97 @@ const App = () => {
       })),
     );
     setData(data);
+    originData.current = data;
   };
-
-  useEffect(() => {
-    fetchData();
-  }, [count]);
-
   const handelToggleDarkMode = () => {
     var element = document.body;
     element.classList.toggle('dark-mode');
   };
-
   const handelRefresh = () => {
     setCount(c => c + 1);
   };
-
-  if (!data.length) {
+  const handelInputChange = e => {
+    e.preventDefault();
+    const val = e.target.value;
+    setSearchValue(val);
+    if (val) {
+      filterFetchData(String(val).toLowerCase());
+    } else {
+      handleResetSearchValue();
+    }
+  };
+  const filterFetchData = str => {
+    const filteredData = data.filter(({ value: { describe, describtion } }) =>
+      (describe || describtion).toLowerCase().includes(str),
+    );
+    // console.log('filteredData', filteredData);
+    setData(filteredData);
+  };
+  const handleResetSearchValue = () => {
+    setSearchValue('');
+    setData(originData.current);
+  };
+  if (!data.length && !originData) {
     return <Loading />;
   }
-
   return (
     <>
-      <div className="nav">
-        <div>
-          <button
-            className="btn btn-sm"
-            onClick={handelToggleDarkMode}
-            style={{ marginRight: '20px' }}
+      <div
+        className="container"
+        style={{
+          padding: '15px',
+        }}
+      >
+        <div className="columns">
+          <div
+            className="column col-auto"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
           >
-            Toggle Mode
-          </button>
-          <button className="btn btn-sm" onClick={handelRefresh}>
-            Refresh
-          </button>
+            <button
+              className="btn btn-sm"
+              onClick={handelToggleDarkMode}
+              style={{ marginRight: '20px' }}
+            >
+              Toggle Mode
+            </button>
+            <button className="btn btn-sm" onClick={handelRefresh}>
+              Refresh
+            </button>
+          </div>
+          <div className="column ">
+            <div
+              className="columns"
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <div className="column col-auto">
+                <input
+                  className="form-input"
+                  type="text"
+                  value={searchValue}
+                  style={{
+                    // marginLeft: '20px',
+                    width: '200px',
+                    height: '28px',
+                  }}
+                  onChange={handelInputChange}
+                  placeholder="search..."
+                />
+              </div>
+              <div className="column">
+                <button className="btn btn-sm" onClick={handleResetSearchValue}>
+                  reset
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="column col-12">

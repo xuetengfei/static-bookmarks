@@ -21,6 +21,7 @@
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "cssnano": "^4.1.10",
     "less": "^3.11.1",
+    "parcel": "^2.7.0",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.26.12"
   }
