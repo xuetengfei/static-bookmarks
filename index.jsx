@@ -55,7 +55,7 @@ const App = () => {
   const handelInputChange = e => {
     e.preventDefault();
     const val = e.target.value;
-    console.log('val', val);
+    // console.log('val', val);
     setSearchValue(val);
     if (val) {
       filterFetchData(String(val).toLowerCase());
@@ -65,12 +65,19 @@ const App = () => {
   };
   const filterFetchData = str => {
     console.log('str', str);
-    const filteredData = originData.current.filter(
+    // filteredData By Describe
+    const filteredDataByDescribe = originData.current.filter(
       ({ value: { describe, describtion } }) =>
         (describe || describtion).toLowerCase().includes(str),
     );
-    // console.log('filteredData', filteredData);
-    setData(filteredData);
+    const filteredDataByDescribeIds = filteredDataByDescribe.map(v => v.id);
+    // filteredData By url
+    const filteredDataByUrl = originData.current
+      .filter(({ value: { url } }) => url.includes(str))
+      .filter(v => !filteredDataByDescribeIds.includes(v.id));
+    const ans = [...filteredDataByDescribe, ...filteredDataByUrl];
+    // console.log('first', end);
+    setData(ans);
   };
   const handleResetSearchValue = () => {
     setSearchValue('');
