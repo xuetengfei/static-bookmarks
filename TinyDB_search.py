@@ -19,7 +19,7 @@ ITEM = Query()
 # print(goal)
 
 
-el = db.table('all').search(ITEM.catalog == 'javascript')
+el = db.table('all').search(ITEM.catalog == '因吹斯汀')
 
 elIDs = []
 for item in el:
