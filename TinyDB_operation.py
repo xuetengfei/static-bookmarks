@@ -31,9 +31,15 @@ goal = {
     # detail:Add the \n string between any text for multiline tooltips.
 }
 
+# ========= Add Items =========
+
 # AddItem(goal)
+
+# ========= Delete Items =========
 
 # DeleteItem([362])
 
+
+# ========= Modify Items =========
 # db.table('all').update(
-# {'catalog': 'fun'}, doc_ids=[133, 143, 144, 151, 169, 272, 273, 274, 277, 285, 286, 288, 289, 302, 303, 304, 307, 309, 310, 314, 321, 325])
+#     {'catalog': 'fun'}, doc_ids=[368])
