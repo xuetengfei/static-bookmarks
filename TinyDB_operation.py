@@ -42,4 +42,4 @@ goal = {
 
 # ========= Modify Items =========
 # db.table('all').update(
-#     {'catalog': 'fun'}, doc_ids=[368])
+# {'catalog': 'Java'}, doc_ids=[197, 248, 254, 260, 308, 339])
