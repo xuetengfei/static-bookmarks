@@ -42,4 +42,4 @@ goal = {
 
 # ========= Modify Items =========
 # db.table('all').update(
-#     {'catalog': 'TypeScript'}, doc_ids=[377])
+#     {'url': 'https://flexbox.tech/'}, doc_ids=[103])
