@@ -5,6 +5,8 @@ echo "----- Start -----"
 #     rm $PWD/dist/*.map
 # fi
 
+
+
 cp $PWD/db.json $PWD/dist/db.json
 
 git pull --ff-only
