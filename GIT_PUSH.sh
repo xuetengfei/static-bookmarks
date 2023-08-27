@@ -12,8 +12,8 @@ if [ -e $PWD/tempCodeRunnerFile.py ]; then
 fi
 
 
-
-npx parcel build index.html
+npm run build
+# npx parcel build index.html
 
 cp ./db.json ./dist/db.json
 # find $PWD/* -empty | xargs rm
