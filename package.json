@@ -1,7 +1,7 @@
 {
   "name": "parceljs",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "index.jsx",
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",

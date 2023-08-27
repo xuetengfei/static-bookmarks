@@ -167,3 +167,5 @@ db.csv
 *.bak*
 TinyDB_operation_2.py
 db.js
+
+.venv
