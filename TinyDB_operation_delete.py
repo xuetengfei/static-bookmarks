@@ -24,7 +24,7 @@ def main():
     db = TinyDB(db_path)
 
     # Example: Delete items with specified IDs
-    item_ids_to_delete = [41]
+    item_ids_to_delete = [385]
     delete_items(db, TABLE_NAME, item_ids_to_delete)
 
     db.close()
