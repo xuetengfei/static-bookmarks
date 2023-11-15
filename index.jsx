@@ -28,14 +28,20 @@ const App = () => {
     const response = await fetch('./db.json');
     const DB = await response.json();
     const { all } = DB;
-    const data = Object.entries(all).map(([key, value]) => ({
-      id: key,
-      value,
-    }));
+    const data = Object.entries(all)
+      .map(([key, value]) => ({
+        id: key,
+        value,
+      }))
+      .sort((a, b) => Number(b.id) - Number(a.id));
+    // .sort((a, b) => b.id.localeCompare(a.id)); // Use localeCompare for string comparison
+
     const catalogList = data
       .map(v => v.value.catalog)
       .filter((el, idx, arr) => idx === arr.indexOf(el))
       .sort();
+    console.log('catalogList:', catalogList);
+    console.log('data:', data);
     setCatalogList(
       ['all', ...catalogList].map((v, id) => ({
         name: v,
