@@ -6,28 +6,28 @@ import os
 import os.path
 
 p = os.path.abspath(__file__)
-path = os.path.abspath(os.path.join(p, os.pardir))+'/db.json'
+path = os.path.abspath(os.path.join(p, os.pardir)) + "/db.json"
 
-TinyDB.DEFAULT_TABLE = 'all'
+TinyDB.DEFAULT_TABLE = "all"
 db = TinyDB(path)
 
 
 def AddItem(item):
-    table = db.table('all')
+    table = db.table("all")
     table.insert(item)
-    print('Insert Item  Successed!!!')
+    print("Insert Item  Successed!!!")
 
 
 def DeleteItem(ids):
-    db.table('all').remove(doc_ids=ids)
-    print('Delete Item Successed !!!')
+    db.table("all").remove(doc_ids=ids)
+    print("Delete Item Successed !!!")
 
 
 goal = {
-    'describtion': 'HusseinNasser dev channel',
-    'detail': '',
-    'url': 'https://www.youtube.com/c/HusseinNasser-software-engineering/playlists',
-    "catalog": 'dev'  # 小写
+    "describtion": "HusseinNasser dev channel",
+    "detail": "",
+    "url": "https://www.youtube.com/c/HusseinNasser-software-engineering/playlists",
+    "catalog": "dev"  # 小写
     # detail:Add the \n string between any text for multiline tooltips.
 }
 
@@ -37,7 +37,7 @@ goal = {
 
 # ========= Delete Items =========
 
-# DeleteItem([284])
+# DeleteItem([57, 58, 49, 56])
 
 
 # ========= Modify Items =========
