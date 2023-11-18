@@ -5,6 +5,8 @@ from tinydb import TinyDB, Query
 import os
 
 DB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "db.json")
+csv_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "db.csv")
+
 TABLE_NAME = "all"
 
 db = TinyDB(DB_FILE)
@@ -35,7 +37,6 @@ def process_csv_file(file_path):
                     add_item(o)
 
 
-csv_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "db.csv")
 process_csv_file(csv_file_path)
 
 
