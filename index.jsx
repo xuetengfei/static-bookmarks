@@ -40,8 +40,8 @@ const App = () => {
       .map(v => v.value.catalog)
       .filter((el, idx, arr) => idx === arr.indexOf(el))
       .sort();
-    console.log('catalogList:', catalogList);
-    console.log('data:', data);
+    // console.log('catalogList:', catalogList);
+    // console.log('data:', data);
     setCatalogList(
       ['all', ...catalogList].map((v, id) => ({
         name: v,
@@ -70,19 +70,26 @@ const App = () => {
     }
   };
   const filterFetchData = str => {
-    console.log('str', str);
-    // filteredData By Describe
-    const filteredDataByDescribe = originData.current.filter(
-      ({ value: { describe, describtion } }) =>
-        (describe || describtion).toLowerCase().includes(str),
-    );
-    const filteredDataByDescribeIds = filteredDataByDescribe.map(v => v.id);
-    // filteredData By url
-    const filteredDataByUrl = originData.current
-      .filter(({ value: { url } }) => url.includes(str))
-      .filter(v => !filteredDataByDescribeIds.includes(v.id));
-    const ans = [...filteredDataByDescribe, ...filteredDataByUrl];
-    // console.log('first', end);
+    const array = originData.current;
+    const lookUpByDescribe = [];
+    const lookUpByDetail = [];
+    const lookUpByUrl = [];
+    for (let index = 0; index < array.length; index++) {
+      const element = array[index];
+      const { id, value } = element;
+      const desc = (value.describe || value.describtion).toLowerCase();
+      const detail = (value.detail || '').toLowerCase();
+      const url = (value.url || '').toLowerCase();
+      if (desc.includes(str)) {
+        lookUpByDescribe.push(element);
+      } else if (detail.includes(str)) {
+        lookUpByDetail.push(element);
+      } else if (url.includes(str)) {
+        lookUpByUrl.push(element);
+      }
+    }
+    const ans = [...lookUpByDescribe, ...lookUpByDetail, ...lookUpByUrl];
+    console.log('ans:', ans);
     setData(ans);
   };
   const handleResetSearchValue = () => {
