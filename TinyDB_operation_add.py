@@ -4,34 +4,36 @@
 import csv
 from tinydb import TinyDB, Query
 import os
-import os.path
 
-p = os.path.abspath(__file__)
-DBFile = os.path.abspath(os.path.join(p, os.pardir)) + "/db.json"  # StaleDBFile
+# 获取数据库文件路径
+current_dir = os.path.dirname(os.path.abspath(__file__))
+DB_FILE = os.path.join(current_dir, "db.json")
 
+# 初始化数据库
 TinyDB.DEFAULT_TABLE = "all"
-db = TinyDB(DBFile)
-ITEM = Query()
+db = TinyDB(DB_FILE)
+Item = Query()
 
+def add_item(item):
+    """添加一个条目到数据库"""
+    db.insert(item)
+    print("Insert Succeeded")
 
-def AddItem(item):
-    table = db.table("all")
-    table.insert(item)
-    print("Insert Successed")
+# 读取CSV文件
+with open("db.csv", "r", encoding="utf-8") as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    
+    for row in csv_reader:
+        # 创建条目字典
+        item = {
+            "description": row["describtion"],  # 注意：这里保留了原有的拼写错误
+            "detail": row["detail"],
+            "url": row["url"],
+            "catalog": row["catalog"]
+        }
+        
+        # 检查是否存在相同URL的条目
+        if not db.contains(Item.url == item["url"]):
+            add_item(item)
 
-
-csv_reader = csv.reader(open("./db.csv", encoding="utf-8"))
-
-for line in csv_reader:
-    if line:  # 跳过空白行
-        if line[0] != "describtion":  # 去掉表头
-            o = {}
-            o["describtion"] = line[0]
-            o["detail"] = line[1]
-            o["url"] = line[2]
-            o["catalog"] = line[3]
-            # print(o)
-            el = db.table("all").search(ITEM.url == line[2])
-            if len(el) == 0:  # 去重
-                AddItem(o)
-            # print('Insert Done')
+print("All items processed")
