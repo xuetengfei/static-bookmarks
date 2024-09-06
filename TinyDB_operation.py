@@ -37,8 +37,7 @@ goal = {
 
 # ========= Delete Items =========
 
-# DeleteItem([57, 58, 49, 56])
-
+# DeleteItem([423,424,425,426,427,428,429,430,431,432,433])
 
 # ========= Modify Items =========
 # db.table('all').update(
