@@ -13,10 +13,11 @@ DB_FILE = os.path.join(current_dir, "db.json")
 TinyDB.DEFAULT_TABLE = "all"
 db = TinyDB(DB_FILE)
 Item = Query()
+table = db.table("all")
 
 def add_item(item):
     """添加一个条目到数据库"""
-    db.insert(item)
+    table.insert(item)
     print("Insert Succeeded")
 
 # 读取CSV文件
@@ -33,7 +34,7 @@ with open("db.csv", "r", encoding="utf-8") as csv_file:
         }
         
         # 检查是否存在相同URL的条目
-        if not db.contains(Item.url == item["url"]):
+        if not table.contains(Item.url == item["url"]):
             add_item(item)
 
 print("All items processed")
