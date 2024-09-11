@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ReactDOM from 'react-dom';
+import { inject } from '@vercel/analytics';
 import 'spectre.css';
 import ToggleButton from './comp-toggle-button';
 import FilterCard from './comp-filter-card-body';
@@ -55,6 +56,7 @@ const App = () => {
   // 使用 useEffect 在组件挂载和 count 变化时获取数据
   useEffect(() => {
     fetchData();
+    inject();
   }, [count, fetchData]);
 
   // 切换暗黑模式
