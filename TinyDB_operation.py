@@ -39,6 +39,8 @@ goal = {
 
 # DeleteItem([423,424,425,426,427,428,429,430,431,432,433])
 
+DeleteItem([426])
+
 # ========= Modify Items =========
 # db.table('all').update(
 #     {'url': 'https://flexbox.tech/'}, doc_ids=[103])
